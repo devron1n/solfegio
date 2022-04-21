@@ -1,8 +1,40 @@
 .App {
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+
+  font-family: "Arial";
 
   &__menu {
-    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+
+  &__menu-item {
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.3s;
+    margin-right: 10px;
+
+    &:hover {
+      box-shadow: 4px 4px 0px 0px #ebebeb;
+    }
+
+    &:active {
+      box-shadow: 4px 4px 0px 0px #868f8d4d;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__content {
+    padding: 10px 0;
+    border-top: #bbc4c14d 1px solid;
   }
 }
