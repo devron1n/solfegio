@@ -6,7 +6,7 @@ import "./App.less";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/solfegio">
       <div className="App">
         <div className="App__menu">
           <Link
